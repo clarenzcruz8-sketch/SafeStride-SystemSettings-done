@@ -1,0 +1,692 @@
+/* =========================================
+   SYSTEM SETTINGS
+========================================= */
+
+.system-settings {
+  min-height: 100%;
+  color: #f5f5f5;
+  padding: 0;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.settings-header {
+  margin-bottom: 48px;
+
+  width: 826px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.settings-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  font-size: 24px;
+  line-height: 1;
+
+  margin: 0;
+
+  color: #f5f5f5;
+  font-weight: 700;
+}
+
+.settings-header h1 svg {
+  width: 40px;
+  height: 40px;
+
+  padding: 9px;
+
+  box-sizing: border-box;
+
+  color: #ff7a18;
+
+  border: 1px solid #ff7a18;
+  border-radius: 9px;
+
+  background: #241a14;
+}
+
+.settings-breadcrumb {
+  font-size: 9px;
+
+  color: #777d87;
+
+  letter-spacing: 0.5px;
+
+  margin-top: 8px;
+  margin-left: 0;
+
+  text-transform: uppercase;
+}
+
+.settings-breadcrumb::after {
+  color: #ff7a18;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.settings-layout {
+  display: grid;
+  grid-template-columns: 248px minmax(500px, 552px);
+  gap: 26px;
+
+  width: 826px;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SETTINGS NAV
+========================================= */
+
+.settings-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
+  width: 248px;
+}
+
+.settings-nav-item {
+  width: 248px;
+  min-height: 46px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #282c34;
+  background: #191c22;
+
+  color: #8c929d;
+
+  padding: 12px 18px;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.settings-nav-item:hover {
+  border-color: #ff7a18;
+  color: #ffffff;
+}
+
+.settings-nav-item.active {
+  background: #291c15;
+  border-color: #ff7a18;
+  color: #ff7a18;
+}
+
+.settings-nav-item svg {
+  flex-shrink: 0;
+}
+
+.active-dot {
+  margin-left: auto;
+
+  font-size: 18px;
+  line-height: 1;
+
+  color: #ff7a18;
+}
+
+
+/* =========================================
+   SETTINGS CONTENT
+========================================= */
+
+.settings-content {
+  width: 552px;
+  min-width: 0;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.settings-card {
+  width: 552px;
+  min-height: 620px;
+
+  box-sizing: border-box;
+
+  background: #191c22;
+
+  border: 1px solid #2a2e37;
+  border-radius: 14px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.card-heading {
+  margin-bottom: 34px;
+}
+
+.card-heading h2 {
+  font-size: 20px;
+
+  font-weight: 700;
+
+  margin: 0 0 7px;
+
+  color: #f5f5f5;
+}
+
+.card-heading p {
+  font-size: 11px;
+
+  color: #858b96;
+
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 27px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.form-group label,
+.api-key label {
+  font-size: 8px;
+
+  color: #858b96;
+
+  letter-spacing: 0.7px;
+
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background: #111318;
+
+  border: 1px solid #2a2e37;
+
+  color: #ffffff;
+
+  padding: 12px;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  font-size: 11px;
+
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #ff7a18;
+}
+
+
+/* =========================================
+   MAINTENANCE MODE
+========================================= */
+
+.setting-row {
+  margin-top: 28px;
+
+  background: #111318;
+
+  border: 1px solid #2a2e37;
+
+  padding: 17px 18px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 8px;
+}
+
+.setting-row strong {
+  font-size: 11px;
+
+  color: #f5f5f5;
+
+  font-weight: 600;
+}
+
+.setting-row p {
+  font-size: 9px;
+
+  color: #858b96;
+
+  margin: 5px 0 0;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   TOGGLE
+========================================= */
+
+.toggle {
+  width: 37px;
+  height: 20px;
+
+  background: #343a45;
+
+  border: none;
+
+  border-radius: 20px;
+
+  padding: 2px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.toggle span {
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  transition: transform 0.2s ease;
+}
+
+.toggle.on {
+  background: #ff7a18;
+}
+
+.toggle.on span {
+  transform: translateX(17px);
+}
+
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.section-label {
+  font-size: 8px;
+
+  color: #ff7a18;
+
+  margin: 0 0 12px;
+
+  letter-spacing: 0.7px;
+}
+
+
+/* =========================================
+   ROLES
+========================================= */
+
+.roles-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.role-item {
+  background: #111318;
+
+  border: 1px solid #2a2e37;
+
+  padding: 13px;
+
+  border-radius: 7px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.role-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 11px;
+
+  color: #f5f5f5;
+}
+
+.role-name svg {
+  color: #858b96;
+}
+
+.permission-button {
+  background: none;
+
+  border: none;
+
+  color: #ff7a18;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   ALERT SETTINGS
+========================================= */
+
+.alert-box {
+  background: #111318;
+
+  border: 1px solid #2a2e37;
+
+  padding: 17px;
+
+  border-radius: 8px;
+
+  margin-bottom: 13px;
+}
+
+.alert-box h3 {
+  font-size: 11px;
+
+  margin: 0 0 16px;
+
+  color: #f5f5f5;
+}
+
+.alert-box p {
+  color: #858b96;
+
+  font-size: 9px;
+
+  margin: 0 0 15px;
+
+  line-height: 1.5;
+}
+
+.range-slider {
+  width: 100%;
+
+  accent-color: #ff7a18;
+}
+
+
+/* =========================================
+   API SETTINGS
+========================================= */
+
+.api-key {
+  display: flex;
+
+  align-items: end;
+
+  gap: 12px;
+
+  background: #111318;
+
+  border: 1px solid #2a2e37;
+
+  padding: 15px;
+
+  border-radius: 8px;
+}
+
+.api-key > div {
+  flex: 1;
+}
+
+.api-key input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  margin-top: 7px;
+
+  background: #191c22;
+
+  border: 1px solid #2a2e37;
+
+  color: #777d87;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  outline: none;
+}
+
+.revoke {
+  color: #ff5c5c;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.generate-button {
+  margin-top: 10px;
+
+  background: transparent;
+
+  border: 1px dashed #343943;
+
+  color: #858b96;
+
+  padding: 11px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.generate-button:hover {
+  border-color: #ff7a18;
+  color: #ff7a18;
+}
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.save-container {
+  margin-top: auto;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  padding-top: 24px;
+}
+
+.save-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  background: #ff7a18;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  padding: 11px 17px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.save-button:hover {
+  opacity: 0.85;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.settings-footer {
+  border-top: 1px solid #292d35;
+
+  margin-top: 18px;
+
+  padding-top: 11px;
+
+  color: #626975;
+
+  font-size: 8px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .settings-layout {
+    grid-template-columns: 210px minmax(0, 1fr);
+
+    width: 100%;
+  }
+
+  .settings-nav,
+  .settings-nav-item {
+    width: 210px;
+  }
+
+  .settings-content,
+  .settings-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .settings-layout {
+    grid-template-columns: 1fr;
+
+    width: 100%;
+  }
+
+  .settings-nav {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .settings-nav-item {
+    width: 100%;
+  }
+
+  .settings-content,
+  .settings-card {
+    width: 100%;
+  }
+
+  .settings-card {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .settings-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+
+  .settings-header h1 {
+    font-size: 21px;
+  }
+
+  .settings-breadcrumb {
+    margin-left: 0;
+  }
+}
